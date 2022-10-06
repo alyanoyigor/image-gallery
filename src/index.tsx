@@ -1,6 +1,9 @@
 import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+
+import store from 'store';
 import theme from 'styles/theme';
 import App from './App';
 
@@ -9,9 +12,11 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <ThemeProvider theme={theme}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </ThemeProvider>,
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ThemeProvider>
+  </Provider>,
 );

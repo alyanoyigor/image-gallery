@@ -7,6 +7,7 @@ export const StyledHeader = styled.div`
   align-items: center;
   height: 60px;
   border-bottom: 1px solid ${(props) => props.theme.primary.main};
+  margin-bottom: 16px;
 `;
 
 export const StyledNav = styled.nav``;
@@ -27,6 +28,15 @@ export const StyledLink = styled(NavLink)`
 
   &.active {
     font-weight: 400;
+    font-style: italic;
     pointer-events: none;
+
+    &::before {
+      content: '[';
+    }
+
+    &::after {
+      content: ']';
+    }
   }
 `;
