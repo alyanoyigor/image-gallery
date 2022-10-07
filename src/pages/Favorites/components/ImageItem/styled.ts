@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { ReactComponent as RemoveIcon } from 'assets/svg/remove.svg';
 
 export const StyledImage = styled.img`
   width: 100%;
@@ -37,4 +39,25 @@ export const StyledImageSkeleton = styled.div`
       transform: translateX(100%);
     }
   }
+`;
+
+export const StyledImageItem = styled.li`
+  display: flex;
+  flex-flow: column;
+`;
+
+export const StyledImageLink = styled(Link)`
+  position: relative;
+`;
+
+export const StyledRemoveIcon = styled(RemoveIcon)`
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+
+  width: 32px;
+  height: 32px;
+
+  fill: #c71306;
 `;

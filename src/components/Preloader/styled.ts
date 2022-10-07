@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Spinner from 'assets/svg/spinner2.svg';
+import Spinner from 'assets/svg/spinner.svg';
 
 export const StyledPreloader = styled.img.attrs({
   src: Spinner,

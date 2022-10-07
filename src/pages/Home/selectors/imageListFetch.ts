@@ -1,7 +1,8 @@
 import { createSelector } from 'reselect';
 import { RootState } from 'store';
 
-const imageListFetchStateSelector = (state: RootState) => state.imageListFetch;
+const imageListFetchStateSelector = (state: RootState) =>
+  state.imageList.imageListFetch;
 
 export const imageListFetchSelector = createSelector(
   imageListFetchStateSelector,

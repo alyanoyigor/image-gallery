@@ -9,7 +9,6 @@ const initialState: ImageListFetchState = {
   data: [],
   loading: true,
   error: null,
-  currentPage: 1,
 };
 
 const IMAGE_LIST_FETCH_SLICE_NAME = 'IMAGE_LIST_FETCH_SLICE';
@@ -18,7 +17,6 @@ const imageListFetchSlice = createSlice({
   name: IMAGE_LIST_FETCH_SLICE_NAME,
   initialState,
   reducers: {
-    imageListFetchChangePage: actions.imageListFetchChangePageAction,
     imageListFetchRemoveData: () => initialState,
   },
   extraReducers: (builder) => {
@@ -38,7 +36,6 @@ const imageListFetchSlice = createSlice({
   },
 });
 
-export const { imageListFetchChangePage, imageListFetchRemoveData } =
-  imageListFetchSlice.actions;
+export const { imageListFetchRemoveData } = imageListFetchSlice.actions;
 
 export default imageListFetchSlice.reducer;

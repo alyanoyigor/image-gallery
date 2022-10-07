@@ -17,6 +17,7 @@ export const StyledListItemButton = styled.button`
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.9);
+  pointer-events: ${(props) => (props.disabled ? 'none' : 'auto')};
 
   &.active {
     background-color: ${(props) => props.theme.primary.main};

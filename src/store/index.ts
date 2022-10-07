@@ -1,12 +1,16 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
 
-import imageListFetchReducer from 'pages/Home/reducer/imageListFetch';
+import favoriteImagesReducer from 'pages/Favorites/reducer/favoriteImages';
+import imageListReducer from 'pages/Home/reducer/imageList';
+import imageDetailsFetchReducer from 'pages/ImageDetails/reducer/imageDetailsFetch';
 import modalReducer from './modal/reducer/modal';
 
 const rootReducer = combineReducers({
   modal: modalReducer,
-  imageListFetch: imageListFetchReducer,
+  imageList: imageListReducer,
+  imageDetailsFetch: imageDetailsFetchReducer,
+  favoriteImages: favoriteImagesReducer,
 });
 
 const store = configureStore({

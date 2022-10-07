@@ -26,12 +26,3 @@ export const imageListFetchErrorAction = (
   state.error = error;
   state.loading = false;
 };
-
-export const imageListFetchChangePageAction = (
-  state: ImageListFetchState,
-  action: PayloadAction<{ page: number }>,
-) => {
-  const { page } = action.payload;
-
-  state.currentPage = page;
-};

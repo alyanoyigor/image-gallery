@@ -6,3 +6,9 @@ export type ImageData = {
   url: string;
   download_url: string;
 };
+
+export type FavoriteImageData = {
+  id: string;
+  url: string;
+  author: string;
+};

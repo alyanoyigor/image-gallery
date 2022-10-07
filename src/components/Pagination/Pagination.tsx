@@ -1,5 +1,4 @@
 import { usePagination } from 'hooks/usePagination';
-import { Fragment } from 'react';
 import {
   StyledLeftArrow,
   StyledList,
@@ -43,24 +42,22 @@ export const Pagination = (props: PaginationProps) => {
         <StyledListItem>
           <StyledLeftArrow disabled={currentPage === 1} onClick={onPrevious} />
         </StyledListItem>
-        {paginationRange.map((number) => (
-          <Fragment key={number}>
+        {paginationRange.map((number, index) => (
+          <StyledListItem
+            key={number === '...' ? number + index.toString() : number}
+          >
             {number === '...' && (
-              <StyledListItem>
-                <StyledListItemButton>&#8230;</StyledListItemButton>
-              </StyledListItem>
+              <StyledListItemButton disabled>&#8230;</StyledListItemButton>
             )}
             {typeof number === 'number' && (
-              <StyledListItem>
-                <StyledListItemButton
-                  className={currentPage === number ? 'active' : ''}
-                  onClick={() => onPaginate(number)}
-                >
-                  {number}
-                </StyledListItemButton>
-              </StyledListItem>
+              <StyledListItemButton
+                className={currentPage === number ? 'active' : ''}
+                onClick={() => onPaginate(number)}
+              >
+                {number}
+              </StyledListItemButton>
             )}
-          </Fragment>
+          </StyledListItem>
         ))}
         <StyledListItem>
           <StyledRightArrow

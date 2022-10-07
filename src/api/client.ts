@@ -11,11 +11,11 @@ client.interceptors.response.use(
   (response) => {
     let error = response.message;
 
-    if (response.response.data?.message) {
+    if (response.response?.data?.message) {
       error = response.response.data.message;
     }
 
-    if (response.response.data?.error?.message) {
+    if (response.response?.data?.error?.message) {
       error = response.response.data.error.message;
     }
 
