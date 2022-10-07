@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+
+
+<polygon opacity="0" fill="#404041" points="43.564,70.406 43.521,56.884 55.21,50.085 66.942,56.809 66.986,70.331 55.297,77.13 ">
+	<animate attributeName="opacity"
+             values="0;1;0" dur="1s" begin="0"
+             repeatCount="indefinite"/>
+</polygon>
+<polygon opacity="0" fill="#404041" points="69.893,70.406 69.85,56.884 81.539,50.085 93.271,56.809 93.315,70.331 81.626,77.13 ">
+	<animate attributeName="opacity"
+             values="0;1;0" dur="1s" begin="0.1"
+             repeatCount="indefinite"/>
+</polygon>
+<polygon opacity="0" fill="#404041" points="83.058,93.191 83.014,79.669 94.703,72.87 106.436,79.594 106.479,93.116 94.79,99.915 ">
+	<animate attributeName="opacity"
+             values="0;1;0" dur="1s" begin="0.3"
+             repeatCount="indefinite"/>
+</polygon>
+<polygon opacity="0" fill="#404041" points="56.982,93.191 56.938,79.669 68.627,72.87 80.36,79.594 80.403,93.116 68.714,99.915 ">
+	<animate attributeName="opacity"
+             values="0;1;0" dur="1s" begin="0.2"
+             repeatCount="indefinite"/>
+</polygon>
+</svg>
