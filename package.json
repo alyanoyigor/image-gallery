@@ -2,6 +2,7 @@
   "name": "image-gallery",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alyanoyigor.github.io/image-gallery",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.14.1",
@@ -19,6 +20,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -62,6 +65,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.0",
     "prettier": "^2.7.1"
   }
